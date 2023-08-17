@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Online Food Delivery Service in India | MyOnlineMeal.comm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" media="screen and (max-width:1170px)"href="css/phone.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --navbar-height: 59px;
+        }
+        #navbar{
+          display:flex;  
+          align-items:center;
+          position: relative;
+        }
+        #logo{
+          margin: 10px 45px;  
+        }
+        #logo img{
+            height: 59px;
+            margin: 3px 6px;
+        }
+        #navbar ul{
+            display:flex;
+           
+        }
+       
+        #navbar::before{
+            content: "";
+            background-color: orangered;          position: absolute;
+          height: 100%;
+          width: 100%;
+          z-index: -1;
+          opacity: 3.4;
+          top: 0px;
+          left: 0px;
+        }
+        #navbar ul li a{
+            color: white;
+           display: block;
+           padding: 3px 22px;
+           border-radius: 20px;
+text-decoration: none;
+background-color: orangered;
+
+        }
+        #navbar ul li a:hover{
+            color: blue;
+           background-color: yellow;
+           
+        }
+        #home{
+            display:flex;
+            flex-direction: column;
+            padding:3px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 550px;
+        }
+        #home::before{
+            content: "";
+          background: url('img/naan.jpg') no-repeat center center/cover;
+         position: absolute;
+         top: 0px;
+         left: 0px;
+          height: 642px;
+          width: 100%;
+          z-index: -1;
+          opacity: 0.9; 
+        }
+        .h-primary{
+           font-size: 29px; 
+           padding: 12px;
+           background-color: orangered;
+           background-position: center;
+           border:brown;
+        }
+           .h-secondary{
+           font-size: 29px; 
+           padding: 12px;
+           background-color: orangered;
+           background-position: center;
+           border:brown;
+           }
+           .h-tertiary{
+            font-size: 29px; 
+           padding: 12px;
+           background-color: orangered;
+           background-position: center;
+           border:brown;
+           
+        }
+        #home h1{
+         color: white;
+         text-align: center;
+        }
+        #home p{
+         color: white;
+         text-align: center; 
+         font-size: 1.5rem; 
+        }
+        .btn{
+          padding: 6px 20px;
+          border: 2px solid black;
+          background-color: brown;
+          color: black; 
+          margin: 17px; 
+          font-size: 1.5rem;
+          border-radius: 10px;
+          cursor:pointer;
+        }
+        .btn:hover{
+            background-color: yellow;
+        }
+        .center{
+           text-align: center; 
+        }
+        #services{
+         margin: 60px;
+         display: flex;   
+        }
+        #services.box{
+            border: 2px solid brown;
+            padding:54px;
+           margin:3px 12px;
+           border-radius: 46px;
+           background:black;
+        }
+        #services.box img{
+          height: 10px;
+          margin:auto;
+          display:block;  
+          padding: 24px 43px;
+          background-position: center;
+          border: 2px solid brown;
+        }
+        #contact{
+         position: relative;
+        }  
+        #contact::before{
+          content: ""; 
+          position: absolute; 
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          opacity: 0.7;
+          background: url('img/contact\ -\ Copy.jpeg')no-repeat center center/cover;
+        } jpg
+        footer{
+         background: black;
+         color: white; 
+         padding: 9px 20px;  
+        } 
+        #contact-box input,
+        #contact-box textarea{
+         width: 100%;
+         padding:  0.5rem;
+         border-radius: 9px;
+         font-size: 1.1rem;
+        }
+        #contact-box {
+         display : flex;
+         justify-content: center; 
+         align-items:center ; 
+         padding-bottom: 34px;
+        }
+        #contact-box form{
+         width: 40%;   
+        }
+        #contact-box label{
+         font-size: 1.3rem;   
+        }
+     
+        
+    </style>
+</head>
+<body>
+   <nav id="navbar">
+    <div id="logo">
+        <img src="img/logo.jpeg" alt="MyOnlineMeal.com">
+        <ul>
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#">Services</a></li>
+        <li class="item"><a href="#">About Us</a></li>
+        <li class="item"><a href="#">Contact Us</a></li>
+        
+        </ul>
+    </div>
+   </nav> 
+   <section id="home">
+    <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
+    <p>We always try to serve you the best and freshly cooked yummy meals.</p>
+    
+    <button class="btn">OrderNow</button>
+    
+   </section>
+   <section class="services-container">
+<h1 class="h-primary center">
+   Our Services
+</h1>
+<div id="services">
+    <div class="box">
+        <img src="img/oats.jpg" alt="">
+        <h2 class="h-primary center">Food Ordering</h2>
+        <p class>When it comes to food ordering, convenience and variety are key factors. Whether you're craving a classic pizza, a gourmet burger, or a healthy salad, the world of culinary delights is just a few clicks or a phone call away.</p>
+    </div>
+    <div class="box">
+        <img src="img/pizza.jpg" alt="">
+        <h2 class="h-secondary center">Food Catering</h2>
+        <p class>Food catering is a service that brings the joy of delicious cuisine to a wide range of events and gatherings.</p>
+    </div>
+    <div class="box">
+        <img src="img/delivery.jpg" alt="">
+        <h2 class="h-tertiary center">Bulk Ordering</h2>
+        <p class>Bulk ordering is a convenient and efficient way to purchase goods or services in large quantities.</p>
+    </div>
+</div>
+   </section>
+       </div>
+   </section>
+   <section id="contact">
+    <h1 class="h-primary center">Contact Us</h1>
+    <div id="contact-box">
+     <form action="">
+      <div class="form-group">
+        <label:for="name">Name: </label>
+        <input type="name" name="name" id="name" placeholder="Enter Your Name">
+      </div>  
+      <div class="form-group">
+        <label:for="email">Email: </label>
+        <input type="email" name="name" id="email" placeholder="Enter Your Email">
+      </div> 
+      <div class="form-group">
+        <label:for="phone">Phone Number: </label>
+        <input type="phone" name="name" id="phone" placeholder="Enter Your Phone Number">
+      </div> 
+      <div class="form-group">
+        <label:for="message">Message: </label>
+       <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      </div> 
+     
+     </form>   
+    </div>
+   </section>
+   <footer>
+    <div class="center">
+      Copyright &copy;  www.myOnlineMeeal.com. All rights reserved!
+    </div>
+   </footer>
+</body>
+</html>
